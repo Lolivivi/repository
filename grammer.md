@@ -67,4 +67,9 @@
 <td align="right">右对齐</td>
 </tr>
 </tbody>
-</table>
+</table><hr>
+<h3 id="代码引用">代码引用</h3>
+<pre><code>多段代码引用
+</code></pre>
+<p><code>不分行代码</code></p>
+
