@@ -59,5 +59,18 @@ private：仅类内可以被访问，对象名.成员，在类外可被间接访
 类内：类的定义内部，准确来讲应该是类的所有成员方法内部
 类外：类的外部
 
+构造方法用来初始化一个对象，名称与类名相同
+public Student(String aname,String ano,int ascore){
+		no = ano;
+		name = aname;
+		score = ascore;
+}
+public Student(Student s){
+		no = s.no;
+		name = s.name;
+		score = s.score;
+}
+使用new自动调用构造方法
+this可以代替构造方法名字，在一种构造方法中调用已经存在的构造方法，但使用this的语句必须在构造方法的第一行
 </code></pre>
 
