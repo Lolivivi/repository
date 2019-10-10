@@ -72,5 +72,8 @@ public Student(Student s){
 }
 使用new自动调用构造方法
 this可以代替构造方法名字，在一种构造方法中调用已经存在的构造方法，但使用this的语句必须在构造方法的第一行
+
+继承
+单继承；final修饰的类不能有派生类
 </code></pre>
 
