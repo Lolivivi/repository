@@ -76,5 +76,14 @@ this可以代替构造方法名字，在一种构造方法中调用已经存在�
 继承
 单继承；final修饰的类不能有派生类
 package使用避免命名冲突
+
+一个派生类对象可以看作一个基类对象
+可以调用基类继承的方法
+不能调用派生类新增方法
+Student s0 = new CollegeStudent();
+s0.setName("li"); //基类对象中的方法，可以调用
+s0.getName();
+s0.getMajor(); //派生类新增方法，不可调用
+
 </code></pre>
 
