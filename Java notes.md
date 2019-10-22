@@ -80,7 +80,7 @@ package使用避免命名冲突
 一个派生类对象可以看作一个基类对象
 1.可以调用基类继承的方法
 2.不能调用派生类新增方法
-3.派生类中重写的方法可以调用
+3.派生类中重写的方法可以调用（重写方法需要原型相同）
 Student s0 = new CollegeStudent(); //向上转型，将派生类对象赋给基类的引用
 s0.setName("li"); //基类对象中的方法，可以调用
 s0.getName();
@@ -88,5 +88,20 @@ s0.getMajor(); //报错，派生类新增方法，不可调用
 s0.print(); //派生类中重写方法，可以调用
 
 一个类只能有一个类，但是可以实现多个接口，要实现接口中所有抽象方法
+抽象类不能实例化对象，但可以创建对它的引用
+Animal a = new Dog();
+
+Object o = new Student();
+o = new Dog();
+o = new CollegeStudent();
+o可以调用Object类的属性方法，不能调用派生类新增属性方法，可以调用派生类重写的方法
+
+重写equals方法
+public boolean equals(Object obj){
+		Student s = (Student)obj;
+		if(this.name == s.name &amp;&amp; this.no == s.no &amp;&amp; this.score == score)
+				return ture;
+		return true;
+}
 </code></pre>
 
