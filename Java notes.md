@@ -99,7 +99,7 @@ o可以调用Object类的属性方法，不能调用派生类新增属性方法�
 重写equals方法
 public boolean equals(Object obj){
 		Student s = (Student)obj;
-		if(this.name == s.name &amp;&amp; this.no == s.no &amp;&amp; this.score == score)
+		if(name.equals(s.name) &amp;&amp; no.equals(s.no) &amp;&amp; this.score == score)
 				return ture;
 		return true;
 }
