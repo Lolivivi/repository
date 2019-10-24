@@ -103,5 +103,10 @@ public boolean equals(Object obj){
 				return ture;
 		return true;
 }
+
+多态
+指方法的多态
+方法重载：静态多态，编译过程中确定的多态
+继承的基础上，方法的重写；向上转型；基类引用调用重写方法
 </code></pre>
 
