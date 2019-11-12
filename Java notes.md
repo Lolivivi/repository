@@ -168,5 +168,20 @@ static{
 final修饰变量，定义常量，类内属性常和static一起使用
 final修饰方法，方法不能被重写
 final修饰类，类不能被继承
+
+异常
+try{
+		可能会抛出异常的代码
+		1.若抛出异常，从抛出异常的代码行停止执行try块其他代码，继续执行catch块代码
+		2.若未抛出异常，执行完try块，执行catch块后面的代码
+} catch(Exception e) {
+		如果出现Exception类型的异常后，执行代码
+}
+
+public static void fun1()  throws Exception {
+		throw new Exception();
+}
+throws代表fun1方法可能会抛出Exception类型异常，一般情况下不写也类似
+throw后跟异常类型的对象，代表当前行抛出这样的异常
 </code></pre>
 
