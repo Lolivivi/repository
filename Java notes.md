@@ -183,5 +183,8 @@ public static void fun1()  throws Exception {
 }
 throws代表fun1方法可能会抛出Exception类型异常，一般情况下不写也类似
 throw后跟异常类型的对象，代表当前行抛出这样的异常
+检查异常：编译时编译器能发现的异常
+非检查异常：运行时才能发现的异常
+
 </code></pre>
 
